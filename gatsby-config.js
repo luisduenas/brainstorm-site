@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby MDX Starter`,
-    author: `Doak Heggeness`,
-    description: `An extension of the gatsby starter blog, adding a home page with support for MDX`,
-    siteUrl: `https://gatsby-starter-mdx-website-blog.netlify.com/`,
+    title: `Brainstorm solutions`,
+    author: `brainstorm solutions`,
+    description: `Site & blog`,
+    siteUrl: `https://brainstormsolutions.netlify.com/`,
     social: {
-      twitter: `doakheggeness`,
+      twitter: `_lduenas`,
     },
   },
   plugins: [
@@ -24,10 +24,10 @@ module.exports = {
       },
     },
     {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      path: `${__dirname}/src/images`,
-      name: `images`,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`,
       },
     },
     {
@@ -59,7 +59,7 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
           },
         ],
-        plugins: [ `gatsby-remark-images`],
+        plugins: [`gatsby-remark-images`],
       },
     },
     `gatsby-plugin-emotion`,
