@@ -96,22 +96,40 @@ class Index extends React.Component {
                     hot technologies, but the ecosystem is very big, that's why
                     we have focused on these core areas:
                   </p>
-                  <ul>
-                    <li>
-                      Front-End coding: in case you already have a website and
-                      want to make it look beatiful.👊
-                    </li>
-                    <li>
-                      Mobile development: You want a mobile app? no problem! we
-                      got you 😎. We can delivery functional cross-platform
-                      applications that work both on iOS and Android.
-                    </li>
-                    <li>
-                      Desktop apps: Our mainly expertise is in desktop apps, so
-                      you can have the confidence that we are going to make the
-                      best work you can get.
-                    </li>
-                  </ul>
+                  <br />
+                  <br />
+                  <div
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: 'auto auto auto',
+                    }}
+                  >
+                    <div>
+                      <h2 style={{ fontSize: '1.8rem' }}>Front-End coding:</h2>
+                      <p style={{ fontSize: '1.5rem' }}>
+                        In case you already have a website and want to make it
+                        look beatiful.👊
+                      </p>
+                    </div>
+                    <div>
+                      <h2 style={{ fontSize: '1.8rem' }}>
+                        Mobile development:
+                      </h2>
+                      <p style={{ fontSize: '1.5rem' }}>
+                        You want a mobile app? no problem! we got you 😎. We can
+                        delivery functional cross-platform applications that
+                        work both on iOS and Android.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 style={{ fontSize: '1.8rem' }}>Desktop apps:</h2>
+                      <p style={{ fontSize: '1.5rem' }}>
+                        Our mainly expertise is in desktop apps, so you can have
+                        the confidence that we are going to make the best work
+                        you can get.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div

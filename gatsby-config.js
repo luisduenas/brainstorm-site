@@ -134,13 +134,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Mdx Website & Blog`,
-        short_name: `Gatsby MDX`,
+        name: `Brainstorm solutions Website & Blog`,
+        short_name: `Brainstorm solutions`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `src/images/logo.png`,
       },
     },
     `gatsby-plugin-offline`,
