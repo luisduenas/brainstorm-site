@@ -3,6 +3,7 @@ import React from 'react'
 import logo from '../images/logo.png'
 
 function Header({ title }) {
+  const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
   return (
     <header>
       <div className="nav">
@@ -21,11 +22,11 @@ function Header({ title }) {
         <div className="nav-links">
           {[
             {
-              route: `/`,
+              route: `#home`,
               title: `Home`,
             },
             {
-              route: `/about`,
+              route: `#about`,
               title: `About us`,
             },
             // {
@@ -37,15 +38,11 @@ function Header({ title }) {
             //   title: `Blog`,
             // },
             {
-              route: `/contact`,
+              route: `#contact`,
               title: `Contact`,
             },
           ].map(link => (
-            <Link
-              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
-              key={link.title}
-              to={link.route}
-            >
+            <Link key={link.title} to={link.route}>
               {link.title}
             </Link>
           ))}

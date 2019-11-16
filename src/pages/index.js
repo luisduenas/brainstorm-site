@@ -6,16 +6,42 @@ import hero from '../images/hero.png'
 import html5 from '../images/html5.png'
 import mobileImage from '../images/cross-platform.png'
 import desktop from '../images/desktop.png'
+import netcore from '../images/netcore.png'
+import reactjs from '../images/react.png'
+import mongodb from '../images/mongodb.png'
+import graphqlImage from '../images/graphql.png'
+import ParticleComponent from '../components/particle-component'
 
 function Index({ data }) {
-  console.log(data)
+  if (typeof window !== 'undefined') {
+    // eslint-disable-next-line global-require
+    require('smooth-scroll')('a[href*="#"]')
+  }
   return (
     <>
-      <div className="siteContainer">
-        <Helmet>
-          <title>Home</title>
-        </Helmet>
-        <div className="siteContent">
+      <div
+        id="home"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
+      >
+        <ParticleComponent />
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <Helmet>
+            <title>Home</title>
+          </Helmet>
           <Header title="Brainstorm solutions" />
           <div className="hero">
             <img
@@ -28,7 +54,7 @@ function Index({ data }) {
           <main
             className="main"
             style={{
-              paddingTop: '0px',
+              marginTop: '0px',
             }}
           >
             <SEO
@@ -36,6 +62,7 @@ function Index({ data }) {
               keywords={[``, `gatsby`, `javascript`, `react`]}
             />
             <div
+              id="about"
               style={{
                 width: '100%',
                 padding: '10%',
@@ -215,20 +242,35 @@ function Index({ data }) {
                 <p>
                   We are very experimented on the .NET framework, but whe are
                   not scared of using other top technologies in the javascript
-                  ecosystem like ReactJS, MongoDB, GraphQL and so on.
+                  ecosystem like ReactJS, GraphQL and so on.
                 </p>
+                <div
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'auto auto auto',
+                    maxWidth: '60%',
+                    alignSelf: 'center',
+                    margin: '0 auto',
+                  }}
+                >
+                  <img
+                    alt="NetCore logo"
+                    src={netcore}
+                    style={{ maxHeight: '150px' }}
+                  ></img>
+                  <img src={reactjs} style={{ maxHeight: '150px' }}></img>
+                  <img src={graphqlImage} style={{ maxHeight: '150px' }}></img>
+                </div>
               </div>
             </div>
           </main>
-        </div>{' '}
-        {/* end of .siteContent */}
-        <footer>
-          © {new Date().getFullYear()}, Built with 🍺 and
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>💜
-        </footer>
-      </div>{' '}
-      {/* end of .siteContainer */}
+          <footer id="contact">
+            © {new Date().getFullYear()}, Built with 🍺 and
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>💜
+          </footer>
+        </div>
+      </div>
     </>
   )
 }
