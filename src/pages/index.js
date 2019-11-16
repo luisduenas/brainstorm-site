@@ -78,7 +78,7 @@ function Index({ data }) {
                   margin: '0 20px 30px',
                 }}
               >
-                Who we are?
+                About us
               </h1>
               <div
                 style={{
