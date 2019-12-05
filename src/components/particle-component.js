@@ -16,7 +16,7 @@ export default function ParticleComponent() {
         params={{
           particles: {
             number: {
-              value: 50,
+              value: 80,
             },
             color: {
               value: '#fff',
@@ -28,7 +28,7 @@ export default function ParticleComponent() {
                 color: '#fff',
               },
               polygon: {
-                nb_sides: 4,
+                nb_sides: 3,
               },
             },
             opacity: {
@@ -46,21 +46,21 @@ export default function ParticleComponent() {
               random: true,
               anim: {
                 enable: false,
-                speed: 40,
+                speed: 20,
                 size_min: 0.1,
                 sync: true,
               },
             },
             line_linked: {
               enable: true,
-              distance: 175,
+              distance: 100,
               color: '#ffffff',
               opacity: 1,
               width: 1,
             },
             move: {
               enable: true,
-              speed: 6,
+              speed: 3,
               direction: 'none',
               random: false,
               straight: false,
