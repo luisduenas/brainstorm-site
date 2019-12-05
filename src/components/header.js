@@ -3,7 +3,6 @@ import React from 'react'
 import logo from '../images/logo.png'
 
 function Header({ title }) {
-  const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
   return (
     <header>
       <div className="nav">
@@ -29,14 +28,6 @@ function Header({ title }) {
               route: `#about`,
               title: `About us`,
             },
-            // {
-            //   route: `/products`,
-            //   title: `Products`,
-            // },
-            // {
-            //   route: `/blog`,
-            //   title: `Blog`,
-            // },
             {
               route: `#contact`,
               title: `Contact`,
