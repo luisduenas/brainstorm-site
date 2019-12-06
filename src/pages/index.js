@@ -17,6 +17,11 @@ function Index({ data }) {
     // eslint-disable-next-line global-require
     require('smooth-scroll')('a[href*="#"]')
   }
+  const skillsImageCenteringStyle = {
+    margin: '0 auto',
+    maxHeight: '150px'
+  };
+
   return (
     <>
       <div
@@ -253,13 +258,9 @@ function Index({ data }) {
                     margin: '0 auto',
                   }}
                 >
-                  <img
-                    alt="NetCore logo"
-                    src={netcore}
-                    style={{ maxHeight: '150px' }}
-                  ></img>
-                  <img src={reactjs} style={{ maxHeight: '150px' }}></img>
-                  <img src={graphqlImage} style={{ maxHeight: '150px' }}></img>
+                  <img alt="NetCore logo" src={netcore} style={skillsImageCenteringStyle} />
+                  <img alt="ReactJS logo" src={reactjs} style={skillsImageCenteringStyle} />
+                  <img alt="GraphQL logo" src={graphqlImage} style={skillsImageCenteringStyle} />
                 </div>
               </div>
             </div>
